@@ -50,5 +50,8 @@ By mapping high-volume platform interaction metrics across regions, this project
 
 ## Recent Changes
 
-<!-- CHANGELOG:START -->
-<!-- CHANGELOG:END -->
+September 21, 2026: Updated project documentation by adding a changelog, introducing PROFILE.md, and refactoring the README.md for better clarity; also removed obsolete files and replaced interactive HTML charts with PNG images, including geographic AI usage visualizations with updated usage totals.
+
+September 14, 2026: Refactored geographic data visualizations by splitting them into separate country and state breakdown charts with complete code listings, updating image links in PROFILE.md, removing outdated visual assets, and documenting dataset provenance.
+
+September 13, 2026: Created the repository with the initial commits and added Git dataset analytics capabilities.

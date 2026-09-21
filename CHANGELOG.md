@@ -3,7 +3,11 @@
 _Grouped by day, generated from git history._
 
 ## 2026-09-21
-- `aa23e20` add changelog
+- `353481e` add changelog
+- `42b9fb8` add changelog
+- `69909c8` Revise README with new content and citation cleanup
+- `d349056` Add PROFILE.md to project structure in README
+- `5397e52` Refactor README for clarity and organization
 - `2bd90b7` updated readme.md
 - `fc00794` updated readme.md
 - `00d7677` remove old files

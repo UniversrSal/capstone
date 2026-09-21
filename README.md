@@ -30,6 +30,7 @@ By mapping high-volume platform interaction metrics across regions, this project
 ├── src/            # Core source code and implementation modules
 ├── tests/          # Unit and integration test suites
 ├── README.md
+├── PROFILE.md      # visualization of datasets
 
 
 @misc{handa2025economictasksperformedai,

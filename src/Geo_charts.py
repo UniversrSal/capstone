@@ -34,17 +34,17 @@ c.sort_values("aui", ascending=False).to_csv(OUT + "country_aui.csv", index=Fals
 top = c.nlargest(20, "aui").sort_values("aui")
 fig = px.bar(top, x="aui", y="country_name", orientation="h",
              title="Top 20 countries by AI usage index")
-fig.write_html(OUT + "top_countries.html")
+fig.write_image(OUT + "top_countries.png", width=1200, height=700, scale=2)
 
 fig = px.scatter(c, x="gdp_per_worker", y="aui", hover_name="country_name",
                  log_x=True, log_y=True, trendline="ols",
                  trendline_options=dict(log_x=True, log_y=True),
                  title="AI usage index vs GDP per working-age person")
-fig.write_html(OUT + "gdp_vs_usage.html")
+fig.write_image(OUT + "gdp_vs_usage.png", width=1200, height=700, scale=2)
 
 fig = px.choropleth(c, locations="iso_alpha_3", color="aui", hover_name="country_name",
                     color_continuous_scale="Viridis", title="AI usage index by country")
-fig.write_html(OUT + "world_map.html")
+fig.write_image(OUT + "world_map.png", width=1200, height=700, scale=2)
 
 gdp_s = pd.read_csv(DATA + "gdp_2024_us_state.csv")
 pop_s = pd.read_csv(DATA + "working_age_pop_2024_us_state.csv")
@@ -61,4 +61,4 @@ s.sort_values("aui", ascending=False).to_csv(OUT + "state_aui.csv", index=False)
 fig = px.choropleth(s, locations="state_code", locationmode="USA-states", scope="usa",
                     color="aui", hover_name="state",
                     color_continuous_scale="Viridis", title="AI usage index by US state")
-fig.write_html(OUT + "us_states.html")
+fig.write_image(OUT + "us_states.png", width=1200, height=700, scale=2)

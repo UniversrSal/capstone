@@ -6,7 +6,7 @@ iso = pd.read_csv("data/iso_country_codes.csv")
 states = pd.read_csv("data/working_age_pop_2024_us_state.csv")
 
 # --- All countries ---
-country_df = df[df["geography"] == "country"]
+country_df = df[(df["geography"] == "country") & (df["facet"] == "country") & (df["variable"] == "usage_count")]
 country_totals = (
     country_df.groupby("geo_id")["value"]
     .sum()
@@ -29,7 +29,7 @@ country_totals.to_csv("notebooks/all_countries.csv", index=False)
 print(f"Countries: {len(country_totals)} rows")
 
 # --- All US states ---
-state_df = df[df["geography"] == "state_us"]
+state_df = df[(df["geography"] == "state_us") & (df["facet"] == "state_us") & (df["variable"] == "usage_count")]
 state_totals = (
     state_df.groupby("geo_id")["value"]
     .sum()

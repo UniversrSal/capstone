@@ -18,7 +18,7 @@ plt.savefig("notebooks/value_distribution.png")
 # which is why the old top_geography.png chart was unreliable.
 
 # Top 15 countries by total usage (geography == "country")
-country_df = df[df["geography"] == "country"]
+country_df = df[(df["geography"] == "country") & (df["facet"] == "country") & (df["variable"] == "usage_count")]
 top_country = (
     country_df.groupby("geo_id")["value"].sum().sort_values(ascending=False).head(15)
 )
@@ -31,7 +31,7 @@ plt.tight_layout()
 plt.savefig("notebooks/top_country.png")
 
 # Top 15 US states by total usage (geography == "state_us")
-state_df = df[df["geography"] == "state_us"]
+state_df = df[(df["geography"] == "state_us") & (df["facet"] == "state_us") & (df["variable"] == "usage_count")]
 top_state = (
     state_df.groupby("geo_id")["value"].sum().sort_values(ascending=False).head(15)
 )

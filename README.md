@@ -65,4 +65,4 @@ September 13, 2026: Created the repository with the initial commits and added Gi
 
 
 
-## [Charts](PROFILE.MD) 
+## [Figures](PROFILE.MD) 

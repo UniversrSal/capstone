@@ -1,12 +1,13 @@
+import os
 import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
+
 
 def create_gdp_ai_comparison():
     """
     Creates a side-by-side visualization comparing GDP output and AI focus
     between United States and Israel.
-    
+
     Returns:
         fig: matplotlib figure object
     """
@@ -22,8 +23,7 @@ def create_gdp_ai_comparison():
 
     # Format y-axis with trillion/billion labels
     ax1.set_ylabel('GDP (USD)', fontsize=12, fontweight='bold')
-    ax1.set_title('National Economic Output (2024)', 
-                  fontsize=14, fontweight='bold', pad=20)
+    ax1.set_title('National Economic Output (2024)', fontsize=14, fontweight='bold', pad=20)
     ax1.set_ylim(0, gdp_values[0] * 1.1)
 
     # Add value labels on bars
@@ -33,8 +33,15 @@ def create_gdp_ai_comparison():
             label_text = f'${value/1e12:.2f}T'
         else:
             label_text = f'${value/1e9:.1f}B'
-        ax1.text(bar.get_x() + bar.get_width()/2., height,
-                label_text, ha='center', va='bottom', fontsize=12, fontweight='bold')
+        ax1.text(
+            bar.get_x() + bar.get_width() / 2.,
+            height,
+            label_text,
+            ha='center',
+            va='bottom',
+            fontsize=12,
+            fontweight='bold'
+        )
 
     # Format y-axis ticks
     ax1.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: f'${x/1e12:.1f}T' if x >= 1e12 else f'${x/1e9:.0f}B'))
@@ -43,30 +50,29 @@ def create_gdp_ai_comparison():
     # ============= CHART 2: COUNTRY AI FOCUS (PIE CHART) =============
     focus_countries = ['United States', 'Israel']
     focus_values = [65, 35]  # USA 65%, Israel 35%
-    
-    wedges, texts, autotexts = ax2.pie(focus_values, 
-                                         labels=focus_countries, 
-                                         autopct='%1.1f%%',
-                                         colors=colors,
-                                         startangle=90,
-                                         textprops={'fontsize': 12, 'fontweight': 'bold'},
-                                         explode=(0.05, 0.05))
 
-    ax2.set_title('AI Investment Focus Distribution', 
-                  fontsize=14, fontweight='bold', pad=20)
+    wedges, texts, autotexts = ax2.pie(
+        focus_values,
+        labels=focus_countries,
+        autopct='%1.1f%%',
+        colors=colors,
+        startangle=90,
+        textprops={'fontsize': 12, 'fontweight': 'bold'},
+        explode=(0.05, 0.05)
+    )
+
+    ax2.set_title('AI Investment Focus Distribution', fontsize=14, fontweight='bold', pad=20)
 
     # Format percentage text
     for autotext in autotexts:
         autotext.set_color('white')
-        autotext.set_fontsize=11
+        autotext.set_fontsize(11)
         autotext.set_fontweight('bold')
 
     # ============= LAYOUT & STYLING =============
-    fig.suptitle('USA vs Israel: Economic Output & AI Investment Focus (2024-2025)', 
-                 fontsize=16, fontweight='bold', y=0.98)
+    fig.suptitle('USA vs Israel: Economic Output & AI Investment Focus (2024-2025)', fontsize=16, fontweight='bold', y=0.98)
 
     plt.tight_layout()
-    
     return fig
 
 
@@ -123,11 +129,15 @@ def print_analysis_summary():
 if __name__ == "__main__":
     # Generate the visualization
     fig = create_gdp_ai_comparison()
-    
+
     # Print analysis summary
     print_analysis_summary()
-    
-    # Save figure
-    plt.savefig('gdp_ai_comparison.png', dpi=300, bbox_inches='tight')
-    print("✓ Chart saved as 'gdp_ai_comparison.png'")
+
+    # Save figure as PNG in the notebooks directory so it is portable and easy to inspect
+    output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'notebooks'))
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, 'gdp_ai_comparison.png')
+    plt.savefig(output_path, dpi=300, bbox_inches='tight')
+    print(f"✓ PNG saved to: {output_path}")
+
     plt.show()

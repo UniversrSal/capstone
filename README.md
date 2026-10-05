@@ -62,3 +62,9 @@ September 21, 2026: Updated project documentation by adding a changelog, introdu
 September 14, 2026: Refactored geographic data visualizations by splitting them into separate country and state breakdown charts with complete code listings, updating image links in PROFILE.md, re[...]
 
 September 13, 2026: Created the repository with the initial commits and added Git dataset analytics capabilities.
+
+
+
+## Charts 
+
+![charts](PROFILE.MD)

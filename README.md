@@ -42,8 +42,7 @@ By mapping high-volume platform interaction metrics across regions, this project
 ```text
 ├── data/           # Datasets and processing scripts
 ├── notebooks/      # Exploratory data analysis and prototyping
-├── src/            # Core source code and implementation modules
-├── tests/          # Unit and integration test suites
+├── src/            # Core source code and implementation module
 ├── README.md
 ├── PROFILE.md      # visualization of datasets
 ```

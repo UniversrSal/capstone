@@ -10,3 +10,6 @@ Caption: Adoption is concentrated in high-income countries, while large emerging
 
 ![US state map](notebooks/us_states.png)
 Caption: DC (3.82) and Utah (3.78) have the highest usage relative to working-age population, followed by California (2.13). Only 11 of 51 states and DC are above 1, and Mississippi (0.21) is lowest.
+
+![ai economic prioritizations](notebooks/gdp_ai_comparison.png)
+Caption: United States stands with a National economic output of 29.18T, with Israel only having 540.4B. AI investment Focus Distribution concluded using 2024 GDP data and 2024 economic investment data by country. 

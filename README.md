@@ -52,6 +52,7 @@ By mapping high-volume platform interaction metrics across regions, this project
 
 - **The United States** has the most overall AI usage globally.
 - **Israel** has the highest AI adoption rate in 2025.
+- **The United States** has the highest ai invesment focus. 
 
 ## Recent Changes
 

@@ -68,3 +68,6 @@ September 13, 2026: Created the repository with the initial commits and added Gi
 
 
 ## [Figures](PROFILE.MD) 
+
+
+Sources: Mongird, K., Thurber, T., Vernon, C., Burleyson, C., Ziya, A. K., & Rice, J. (2025). IM3 open source data center atlas. Osti.Gov. https://doi.org/10.57931/2550666

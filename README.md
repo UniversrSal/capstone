@@ -35,6 +35,7 @@ By mapping high-volume platform interaction metrics across regions, this project
 * **Methodological Foundation:** *Which Economic Tasks are Performed with AI? Evidence from Millions of Claude Conversations* ([arXiv:2503.04761](https://arxiv.org/abs/2503.04761)).
 * **Supplementary Data:** World Bank Open Data (National $GDP\ per\ capita$, Broadband Access, Labor Force Participation).
 * Mongird, K., Thurber, T., Vernon, C., Burleyson, C., Ziya, A. K., & Rice, J. (2025). IM3 open source data center atlas. Osti.Gov. https://doi.org/10.57931/2550666
+*  Standford HAI 
 
 
 ---

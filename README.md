@@ -54,7 +54,8 @@ By mapping high-volume platform interaction metrics across regions, this project
 
 - **The United States** has the most overall AI usage globally.
 - **Israel** has the highest AI adoption rate in 2025.
-- **The United States** has the highest ai invesment focus. 
+- **The United States** has the highest ai invesment focus.
+- **Utah** is second in ai usage, yet has only 11 data centers, how can that be? How much energy is consumed there?
 
 ## Recent Changes
 

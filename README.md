@@ -58,6 +58,8 @@ By mapping high-volume platform interaction metrics across regions, this project
 
 ## Recent Changes
 
+October 25, 2025: Creation of Data Center Density map. Hghest near Utah, explaing the ai usage. 
+
 October 12, 2026: Updated top 10 to broden perspective ai investent usage across multiple countries rather than 2. 
 
 October 5, 2026: Added key findings on AI usage and adoption rates; documented that the United States leads in overall AI usage while Israel demonstrates the highest adoption rate in 2025. Added GDP and AI investment focus comparison visualizations for the United States and Israel, including a PNG export workflow for notebook-ready presentation and repo documentation.

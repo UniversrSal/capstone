@@ -14,5 +14,5 @@ Caption: DC (3.82) and Utah (3.78) have the highest usage relative to working-ag
 ![ai economic prioritizations](notebooks/gdp_ai_comparison.png)
 Caption: United States stands with a National economic output of 29.18T, with Israel only having 540.48B. AI investment Focus Distribution concluded using 2024 GDP data and 2024 economic spending by country. 
 
-![Data Center Density Map](notebooks/Data Center Density.png)
+![Data Center Density Map](notebooks/Data_Center_Density.png)
 Caption: Density map of United States. 

@@ -58,7 +58,7 @@ By mapping high-volume platform interaction metrics across regions, this project
 
 ## Recent Changes
 
-October 25, 2025: Creation of Data Center Density map. Hghest near Utah, explaing the ai usage. 
+October 25, 2025: Creation of Data Center Density map. Hghest near Utah, explaing the ai usage. Found Data Center in Provo,Utah. **Question raised: does this data center's energy usage explain why Utah was second in the ai usage index? Does Data center energy consumption contribute to how much Ai usage a state has?**
 
 October 12, 2026: Updated top 10 to broden perspective ai investent usage across multiple countries rather than 2. 
 
